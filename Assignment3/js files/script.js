@@ -38,6 +38,7 @@ function randomNumber(value){
         guessed++
         
     if(guessed >= 3 || correct){
+        showAlert('You lost! Try Again', 'error')
         btn.setAttribute('disabled', '')
         input.setAttribute('disabled', '')
         restartButton()
