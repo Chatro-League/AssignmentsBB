@@ -1,3 +1,2 @@
-[# AssignmentsBB
-I host mere projects here hehe
-](https://chatro-league.github.io/AssignmentsBB/Assignement1)Cart List
+[Cart List
+](https://chatro-league.github.io/AssignmentsBB/Assignement1)
