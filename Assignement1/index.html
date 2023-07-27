@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .success, .error{
+            background-color: rgba(17, 165, 17, 0.815);
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+        #add:hover{
+            transition-duration: 0.4s;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 1px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+        }
+        #remove:hover {
+            transition-duration: 0.4s;
+            background-color: crimson;
+            color: white;
+            padding: 1px 30px;
+            text-align: center;
+            display: inline-block;
+            font-size: 10px;
+        }
+    </style>
+    <title>Product List</title>
+</head>
+<body>
+    <div class="container" id="products">
+        <h3>Products</h3>
+        <table id='product-table'class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price($)</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <tr>
+                    <td>Laptop</td>
+                    <td>800</td>
+                    <td><button id="add" type="button" value="Add to Cart">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Keyboard</td>
+                    <td>40</td>
+                    <td><button id="add" type="button" value="Add to Cart">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>50</td>
+                    <td><button id="add" type="button" value="Add to Cart">Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>Mousepad</td>
+                    <td>35</td>
+                    <td><button id="add" type="button" value="Add to Cart">Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="container" >
+        <h3>Your Cart</h3>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Remove Item</th>
+                </tr>
+            </thead>
+            <tbody id="cart">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="js files/script.js"></script>
+</body>
+</html>
